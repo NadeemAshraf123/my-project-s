@@ -1,0 +1,106 @@
+/* Container for the hero section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Left section styling */
+  .hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding-left: 2rem;
+  }
+  
+  .hero-left h2 {
+    color: #090909;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .hero-left p {
+    color: #171717;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  
+  /* Styling for the 'new' label with hand icon */
+  .hero-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .hero-hand-icon img {
+    width: 50px;
+    height: auto;
+  }
+  
+  /* Button styling */
+  .hero-latest-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    margin-top: 1.5rem;
+    background: #ff4141;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .hero-latest-btn:hover {
+    background: #e63939;
+  }
+  
+  .hero-latest-btn img {
+    width: 20px;
+    height: auto;
+  }
+  
+  /* Right section styling */
+  .hero-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-left,
+    .hero-right {
+      padding: 1rem;
+    }
+  
+    .hero-left {
+      padding-left: 0;
+    }
+  
+    .hero-latest-btn {
+      margin: 1rem auto;
+    }
+  }
+  
